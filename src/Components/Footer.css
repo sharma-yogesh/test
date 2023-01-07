@@ -1,0 +1,112 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #eee;
+    padding: 50px 0;
+}
+.footer .leftImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .leftImage h2{
+    font-size: 22px;
+    font-weight: 300;
+    color:rgba(0,0,0,0.7);
+    font-family: 'Poppins', sans-serif;
+
+}
+.footer .leftImage a{
+    /* text-decoration: none; */
+    font-size: 18px;
+    color:rgba(0,0,0,0.7);
+    font-family: 'Poppins', sans-serif;
+}
+.leftImage img{
+    width: 350px;
+    margin: 25px;
+    height: 200px;
+}
+.footer .rightImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightImage img{
+    border-radius: 50%;
+    margin: 25px;
+    width: 200px;
+    height: 200px;
+}
+.footer .rightImage h2{
+    font-size: 22px;
+    font-weight: 300;
+    color:rgba(0,0,0,0.7);
+    font-family: 'Poppins', sans-serif;
+
+}
+.footer .rightImage a{
+    /* text-decoration: none; */
+    font-size: 18px;
+    color:rgba(0,0,0,0.7);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media only screen 
+    and (min-device-width:320px)  and (max-device-width:920px)
+    and (min-device-height: 450px) and (max-device-height:920px)
+    and (-webkit-device-pixel-ratio: 3) {
+        .rightImage img{
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+        }
+        .footer .rightImage{
+            margin: 15px 0;
+        }
+        .footer .rightImage h2{
+            font-size: 18px;
+
+        }
+        .leftImage img{
+            width: 250px;
+            margin: 10px;
+            height: 150px;
+        }
+    }
+    @media all and (min-device-width: 768px) and
+    (min-device-height: 860px) and
+     (orientation:portrait) {
+        .rightImage img{
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+        }
+        .footer .rightImage{
+            margin: 15px 0;
+        }
+        .footer .rightImage h2{
+            font-size: 18px;
+
+        }
+        .footer .leftImage h2{
+            font-size: 18px;
+        }
+        .footer .rightImage h2{
+            font-size: 18px;
+        }
+        .footer .leftImage a{
+            font-size: 16px;
+        }
+        .footer .rightImage a{
+            font-size: 16px;
+        }
+        .leftImage img{
+            width: 250px;
+            margin: 10px;
+            height: 150px;
+        }
+     }

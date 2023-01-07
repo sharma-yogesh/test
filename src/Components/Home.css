@@ -1,0 +1,128 @@
+.homePage {
+    padding: 50px 0;
+}
+.homePage .options{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    border-width: fit-content;
+    width: 40%;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+.homePage .options form{
+    display: flex;
+    justify-content: center;
+}
+.homePage .options .radioOption{
+    display: flex;
+    margin:0px 25px;
+    align-content: center;
+}
+.homePage .options .radioOption label{
+    margin-left: 6px;
+}
+.homePage .city{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+.homePage .city h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+
+}
+.homePage .cities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.homePage .cities .box{
+   
+    cursor: pointer;
+    color: purple;
+    border: 3px solid #ccc;
+    width: 180px;
+    height: 100px;
+    padding: 25px 15px;
+    margin: 15px;
+}
+.homePage .cities .box h2{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.homePage .cities .box p{
+    color: #aaa;
+}
+.homePage button{
+    background-color: transparent;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+.homePage .city .cityColor{
+    color: rgb(113, 11, 113);
+    font-weight: 500;
+}
+
+@media only screen 
+    and (min-device-width:320px)  and (max-device-width:920px)
+    and (min-device-height: 450px) and (max-device-height:920px)
+    and (-webkit-device-pixel-ratio: 3) {
+        .homePage {
+            padding: 25px 0;
+        }
+        .homePage .options{
+            width: 85%;
+        }
+        .homePage .options .radioOption label{
+            margin-left: 0px;
+        }
+        .homePage .options .radioOption{
+            margin:0px 10px;
+        }
+        .homePage .cities .box{
+            cursor: pointer;
+            color: purple;
+            border: 3px solid #ccc;
+            width: 180px;
+            height: 120px;
+            padding: 25px 15px;
+            margin: 5px;
+        }
+        .homePage .city h1{
+            font-size: 25px;
+        }
+        .homePage button{
+            font-size: 12px;
+        }
+    }
+@media all and (min-device-width: 768px) and
+ (min-device-height: 860px) and
+  (orientation:portrait) {
+    .homePage {
+        padding: 50px 0;
+    }
+    .homePage .options{
+        width:60%;
+    }
+    .homePage .cities .box{
+        cursor: pointer;
+        color: purple;
+        border: 3px solid #ccc;
+        width: 220px;
+        height: 120px;
+        padding: 25px 15px;
+        margin: 10px;
+    }
+    .homePage .cities{
+        padding-bottom: 25px;
+    }
+    .homePage .city{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .homePage .city h1{
+        font-size: 36px;
+    }
+  }

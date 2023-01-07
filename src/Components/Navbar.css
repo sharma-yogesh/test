@@ -1,0 +1,241 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 10px ;
+    background-image: linear-gradient(to right,rgba(108,0,255,0.8),#CB1C8D,rgba(206,15,61,0.9) );
+}
+.navbar .navbar__body{
+    display: flex;
+    align-items: center;
+  
+}
+.navbar .logo img{
+    width: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px 0px;
+}
+.navbar .res__signin{
+    display: none;
+}
+.navbar .logo_res{
+    display: none;
+}
+.navbar .logo{
+    
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+.navbar .bigNav{
+    padding: 15px 10px;
+    border-right: 1px solid rgba(0,0,0,0.3);
+
+}
+.navbar .navbar__body .bar{
+    display: none;
+}
+.navbar .bigNav a{
+    margin: 0px 29px;
+    text-decoration: none;
+    color: white;
+    font-weight: 450;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .rightNav .barTab{
+    display: none;
+}
+.navbar .navbar__body .smallNav a{
+    margin: 0px 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .rightNav{
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+.navbar .rightNav .navSign{
+    margin: 0px 15px;
+}
+.navbar .rightNav{
+    border-left: 1px solid rgba(0,0,0,0.3);
+   
+}
+.navbar .rightNav h3{
+    color: white;
+    margin-left: 15px;
+    font-weight: lighter;
+}
+.dropdown
+{
+    display: none;
+}
+
+.navbar .rightNav .navSign a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.dropdownPad {
+    display: none;
+}
+/* Ipad responsive */
+@media all and (min-device-width: 768px) and
+ (min-device-height: 860px) and
+  (orientation:portrait) {
+        .navbar .navbar__body .bar{
+           display: none;
+        }
+        .navbar .logo img{
+            margin-left: 15px;
+            width: 100px;
+            margin-right: 25px;
+
+        }
+        .dropdownPad {
+            display: block;
+        }
+        .dropdownPad .smallNav{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 15px;
+            background-image: linear-gradient(to right,rgba(108,0,255,0.8),#CB1C8D,rgba(206,15,61,0.9) );
+        }
+        .dropdownPad .smallNav a{
+            text-align: right;
+            margin-right: 35px;
+            text-decoration: none;
+            color: white;
+            padding: 10px 0;
+        }
+        .navbar .rightNav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .rightNav .barTab{
+            display: block;
+        }
+        .navbar .rightNav h3{
+            display: none;
+        }
+        .navbar .rightNav .barTab .bars{
+            color: white;
+        }
+        .navbar .bigNav{
+            padding: 10px 5px;
+            border-right: none;
+            display: flex;
+        }
+        .navbar .bigNav a{
+            font-size:16px;
+            margin: 0px 22px;
+        }
+        .navbar .smallNav{
+            display: none;
+        }
+        .navbar .rightNav .navSign a{
+            font-size: 16px;
+        }
+        .navbar .rightNav .barTab .bars{
+            font-size: 18px;
+        }
+    }
+
+/* Mobile responsive */ 
+@media only screen 
+    and (min-device-width:320px)  and (max-device-width:920px)
+    and (min-device-height: 450px) and (max-device-height:920px)
+    and (-webkit-device-pixel-ratio: 3) {
+        .dropdown{
+             display: flex;
+             flex-direction: column;
+             background-image: linear-gradient(to right,rgba(108,0,255,0.8),#CB1C8D,rgba(206,15,61,0.9) );
+            padding: 10px;
+            /* text-align: center; */
+        }
+        .dropdownPad {
+            display: none;
+        }
+        .dropdown .bigNav{
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .dropdown .bigNav a{
+            text-decoration: none;
+            color: white;
+        }
+        .dropdown .smallNav{
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .dropdown .smallNav a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar .rightNav{
+            display: none;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        
+        .navbar .navbar__body {
+            display: flex !important;
+            align-items: center;
+        }
+        .navbar .logo{
+    
+            border-right: none;
+        }
+        .navbar .rightNav .barTab{
+            display: none;
+        }
+        .navbar .logo_res{
+            display: block;
+        }
+        .navbar .logo_res img{
+            width: 80px;
+        }
+        .navbar .res__signin{
+            display: block;
+        }
+        .navbar  .res__signin a{
+            text-decoration: none;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        .navbar .navbar__body .bar{
+            display: block;
+        }
+        .navbar .navbar__body .bar .bars{
+            color: white;
+        }
+        .navbar .logo{
+            display: none;
+            /* margin-left: 15px; */
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img{
+            display: none;
+        }
+        .navbar .navbar__body .bigNav {
+                display: none;
+        }
+        .navbar .navbar__body .smallNav {
+            display: none;
+        }
+
+     }
